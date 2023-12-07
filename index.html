@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ayoub Sbai - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ayoub Sbai
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          ayoubsbaii@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +122607224382
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/animation/2022/11/10/13/22/13-22-56-246_512.gif"  class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Ayoub Sbai! <img src="https://i.pinimg.com/originals/b9/37/12/b9371273ae94a946e92074d1b9696680.gif" class="emoji">
+          </h1>
+          <p>
+            Hi, I'm Ayoub, a skilled web developer specializing in creating dynamic and secure websites. 
+            I've successfully delivered projects such as e-commerce platforms, content management systems, and data visualization dashboards. 
+            My expertise includes React.js, Node.js, PHP, MySQL, Angular, and Python. 
+            Explore my portfolio for a glimpse into how I can elevate your web development projects.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        
+        <div class="skill">
+          <img src="html_finalprojimages/java.png">
+          <h6>java</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png">
+          <h6>CSS3</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png">
+          <h6>react.js</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>E-Commerce Platform Development for Retail Client</h3>
+            <ul>
+              <li>Implemented a robust e-commerce platform for a retail client, incorporating payment gateways and a recommendation engine using technologies such as React.js, Node.js, and Stripe.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Content Management System for Media Company</h3>
+            <ul>
+              <li>Engineered a comprehensive content management system for a media company, integrating user authentication, multimedia content uploading, and real-time analytics using PHP, MySQL, and Angular.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Data Visualization Dashboard for Financial Institution</h3>
+            <ul>
+              <li>Created a data visualization dashboard for a financial institution, facilitating dynamic reporting and analysis through interactive charts and graphs, utilizing Python, Flask, and D3.js.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Ayoub is a very quick learner and rapidly grasps key concepts of web development. 
+         He has a great attitude and is an excellent team player. He possesses a curious mind and asks the right questions. 
+         Ayoub takes initiative within a team and has the potential to lead the team effectively.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Ayoub has been an awesome experience. 
+          He is highly knowledgeable and always goes the extra step to make sure everything is right. 
+          For any future projects that need his expertise, I would definitely want to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked alongside Ayoub during the initial phase of our venture, which required web development. 
+          He is a committed resource with in-depth knowledge of the domain. 
+          Ayoub will be an asset to any organization.! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            <div class="popup" id="popup">
+              <img src="./checkmark--outline.svg"/>
+              <h3>Thanks for leaving a recommendation!</h3>
+              <button type="button" onclick="showPopup(false)">Ok</button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <section>
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="./toparrow.svg"/>
+      </a>
+    </div>
+    </section>
+  </body>
+</html>
