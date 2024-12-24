@@ -117,9 +117,12 @@ nav .topmenu:hover {
 
 #experience {
   background-color: #fff;
-  color: #777;
   text-align: center;
-  font-size: 1rem;
+}
+
+#experience h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .all_experience {
@@ -129,14 +132,33 @@ nav .topmenu:hover {
 }
 
 .experiences {
-  background-color: #fff;
-  border-radius: 10px;
-  width: 200px;
+  background-color: #f8f8f8;
+  width: 250px;
   padding: 20px;
-  text-align: center;
+  border-radius: 10px;
   margin: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.experiences h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.experiences ul {
+  font-size: 1rem;
+  color: #555;
+}
+
+.experiences li {
+  margin-bottom: 10px;
+}
+
+.experiences hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
 
 /* Skills Section */
 #skills {
