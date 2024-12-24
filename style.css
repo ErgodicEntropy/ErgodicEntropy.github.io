@@ -269,6 +269,19 @@ nav .topmenu:hover {
   margin: 20px 0;
 }
 
+.project-card a {
+  font-weight: bold;
+  font-size: 1.2em; /* Adjusts the size to make it larger than <p> */
+  color: #007BFF; /* Initial color, adjust as per preference */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-card a:hover {
+  color: #FF5733; /* Color on hover, adjust as per preference */
+  transform: scale(1.1); /* Slightly increases the size on hover */
+}
+
 /* Certifications Section */
 #certifications {
   background-color: #fff;
