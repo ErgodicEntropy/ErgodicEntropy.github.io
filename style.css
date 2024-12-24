@@ -113,6 +113,31 @@ nav .topmenu:hover {
   margin-top: 20px;
 }
 
+/* Experience Section */
+
+#experience {
+  background-color: aqua;
+  color: #777;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.all_experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.experiences {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Skills Section */
 #skills {
   background-color: #fff;
