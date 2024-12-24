@@ -160,6 +160,27 @@ nav .topmenu:hover {
 }
 
 
+.experience-details {
+  background-color: #f9f9f9;
+  border-left: 4px solid #333;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.experience-details h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.experience-details p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
 /* Skills Section */
 #skills {
   background-color: #fff;
