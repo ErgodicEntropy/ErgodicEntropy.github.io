@@ -48,13 +48,10 @@ nav {
   z-index: 100;
 }
 
-.profile_name h1 {
+nav .profile_name {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: bold; /* Makes the text bold */
-  color: white; /* Bright contrasting color for visibility */
-  font-size: 1.5em; /* Slightly larger font size for prominence */
 }
 
 nav .profile_name a {
