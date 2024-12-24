@@ -283,43 +283,79 @@ nav .topmenu:hover {
 }
 
 /* Certifications Section */
-#certifications {
-  background-color: #fff;
+/* General section styling */
+.certifications {
+  font-family: Arial, sans-serif;
+  margin: 50px auto;
+  padding: 20px;
   text-align: center;
 }
 
-#certifications h2 {
+.certifications h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
+/* Certifications container */
 .certifications-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
+/* Certification card styling */
 .certification-card {
-  background-color: #f8f8f8;
-  width: 250px;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: left;
 }
 
 .certification-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certification-card ul li {
   font-size: 1rem;
   color: #555;
 }
 
-.certification-card li {
-  margin-bottom: 10px;
+.certification-card a {
+  color: inherit; /* Inherit the color from parent (ensure text color is maintained) */
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+  padding: 10px;
 }
 
-.certification-card hr {
+/* Hover effect for the certification cards */
+.certification-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card a:hover {
+  color: #007bff; /* Change to a blue color when hovered */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#certifications-container hr {
+  width: 80%;
   border: 1px solid #ddd;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Back to Top Button */
