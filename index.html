@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style.css"/>
     <script src="./script.js"></script>
     <link href="Images/boltzmann.jpg" rel="icon" type="images/x-favicon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -300,7 +301,68 @@
         </div>
 
       </div>
+      <canvas id="skillsChart" width="400" height="200"></canvas>
     </section>
+
+    <script>
+      // Data for the chart
+      const skills = [
+        { name: 'HTML', experience: 2 },
+        { name: 'CSS3', experience: 2 },
+        { name: 'JavaScript', experience: 3 },
+        { name: 'TypeScript', experience: 2 },
+        { name: 'ReactJS', experience: 2 },
+        { name: 'AngularJS', experience: 2 },
+        { name: 'NodeJS', experience: 2 },
+        { name: 'PHP', experience: 1 },
+        { name: 'Java', experience: 2 },
+        { name: 'R', experience: 1 },
+        { name: 'SPSS', experience: 1 },
+        { name: 'SQL', experience: 4 },
+        { name: 'PostgresSQL', experience: 2 },
+        { name: 'MongoDB', experience: 1 },
+        { name: 'Python', experience: 5 },
+        { name: 'Flask', experience: 1 },
+        { name: 'Django', experience: 1 },
+        { name: 'FastAPI', experience: 1 },
+        { name: 'LangChain', experience: 1 },
+        { name: 'Docker', experience: 1 },
+        { name: 'Git', experience: 4 },
+        { name: 'Bash', experience: 2 },
+        { name: 'Powershell', experience: 2 },
+        { name: 'CMD', experience: 2 },
+        { name: 'LaTeX', experience: 4 },
+        { name: 'Markdown', experience: 5 },
+        { name: 'Trello', experience: 3 },
+        { name: 'LucidChart', experience: 3 }
+      ];
+
+      // Sort skills by experience (Pareto distribution)
+      skills.sort((a, b) => b.experience - a.experience);
+
+      // Create the chart
+      const ctx = document.getElementById('skillsChart').getContext('2d');
+      const skillsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: skills.map(skill => skill.name),
+          datasets: [{
+            label: 'Years of Experience',
+            data: skills.map(skill => skill.experience),
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
           
     <!-- Projects -->
     <section class="projects" id="projects">
